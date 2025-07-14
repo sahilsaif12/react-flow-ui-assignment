@@ -69,9 +69,7 @@ export const SettingsPanel: React.FC<SettingsPanelProps> = ({
               placeholder="Enter your message here..."
               className="w-full h-32 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none transition-all duration-200"
             />
-            <div className="text-xs text-gray-500 mt-1">
-              This text will be sent to the user when this node is reached.
-            </div>
+            
           </div>
 
         
