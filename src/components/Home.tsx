@@ -83,6 +83,7 @@ const Home = () => {
     // Handle node selection
     const onNodeClick = useCallback((event: React.MouseEvent, node: Node) => {
         // Cast to TextNodeData for our selected node state
+        event.preventDefault()
         setSelectedNode(node as Node<TextNodeData>);
     }, []);
 
