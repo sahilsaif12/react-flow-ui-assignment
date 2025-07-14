@@ -15,7 +15,6 @@ export const SettingsPanel: React.FC<SettingsPanelProps> = ({
   onUpdateNode,
   onClose,
 }) => {
-  console.log("node",node);
   
   const [text, setText] = useState(node.data.text || '');
 
@@ -75,17 +74,7 @@ export const SettingsPanel: React.FC<SettingsPanelProps> = ({
             </div>
           </div>
 
-          {/* Preview */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Preview
-            </label>
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-              <div className="text-sm text-gray-800">
-                {text || <span className="text-gray-400 italic">No message text</span>}
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
 
